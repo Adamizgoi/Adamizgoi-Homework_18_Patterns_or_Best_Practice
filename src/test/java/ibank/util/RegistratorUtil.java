@@ -45,7 +45,7 @@ public class RegistratorUtil {
         public static void setUpWebApi() {
             requestSpec = new RequestSpecBuilder()
                     .setBaseUri("http://localhost")
-                    .setPort(9999)
+                    .setPort(7777)
                     .setAccept(ContentType.JSON)
                     .setContentType(ContentType.JSON)
                     .log(LogDetail.ALL)

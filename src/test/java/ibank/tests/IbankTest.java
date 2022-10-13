@@ -48,7 +48,7 @@ public class IbankTest {
     @BeforeEach
     void setUp() {
         Configuration.headless=true;
-        open("http://localhost:9999/");
+        open("http://localhost:7777/");
     }
 
     @AfterEach
