@@ -1,4 +1,4 @@
-package util;
+package card_delivery.util;
 
 import lombok.experimental.UtilityClass;
 import java.time.LocalDate;

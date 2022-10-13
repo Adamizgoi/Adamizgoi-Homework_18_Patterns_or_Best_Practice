@@ -1,21 +1,21 @@
-package tests;
+package card_delivery.tests;
 
+import card_delivery.data.CardUserInfo;
+import card_delivery.services.CardUserInfoGenerator;
+import card_delivery.services.FillFieldsService;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
-import data.CardUserInfo;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import services.CardUserInfoGenerator;
-import services.FillFieldsService;
 
+import static card_delivery.util.CleanerService.Cleaner.cleanDate;
+import static card_delivery.util.CleanerService.Cleaner.cleanFields;
+import static card_delivery.util.DateGenerationService.DateGenerator.generateDate;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static java.time.Duration.ofSeconds;
-import static util.CleanerService.Cleaner.cleanDate;
-import static util.CleanerService.Cleaner.cleanFields;
-import static util.DateGenerationService.DateGenerator.generateDate;
 
 public class AppCardDeliveryTest {
 
@@ -26,8 +26,8 @@ public class AppCardDeliveryTest {
     FillFieldsService bot = new FillFieldsService();
 
     @BeforeEach
-     protected void setUp() {
-        Configuration.headless=true;
+    protected void setUp() {
+        Configuration.headless = true;
         open("http://localhost:9999/");
         cleanDate();
     }

@@ -1,4 +1,4 @@
-package services;
+package card_delivery.services;
 
 import static com.codeborne.selenide.Selenide.$;
 

@@ -1,4 +1,4 @@
-package data;
+package card_delivery.data;
 
 import lombok.Data;
 

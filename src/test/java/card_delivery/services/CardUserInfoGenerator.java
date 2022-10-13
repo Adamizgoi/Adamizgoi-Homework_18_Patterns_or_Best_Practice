@@ -1,8 +1,8 @@
-package services;
+package card_delivery.services;
 
+import card_delivery.data.CardCityRepo;
+import card_delivery.data.CardUserInfo;
 import com.github.javafaker.Faker;
-import data.CardCityRepo;
-import data.CardUserInfo;
 
 import java.util.Locale;
 
