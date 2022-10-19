@@ -27,7 +27,6 @@ public class DateOfMeetingPlanningTest {
 
     @BeforeEach
     protected void setUp() {
-        Configuration.headless = true;
         open("http://localhost:9999/");
         cleanDate();
     }
